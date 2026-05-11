@@ -1,0 +1,56 @@
+Simple Chatbot - Run Steps
+
+1) Open terminal in chatbotApp folder
+2) Compile:
+   javac SimpleChatbot.java
+3) Run:
+   java SimpleChatbot
+
+Example queries you can ask:
+- hi
+- product details
+- what services do you provide
+- delivery time
+- payment options
+- return policy
+- store timing
+- address
+- bye
+
+/*
+================================================================================
+                                                TIME COMPLEXITIES — FILE SUMMARY
+================================================================================
+
+- Selection_Sort.java : O(n^2) time, O(1) space.
+    Reason: Two nested loops scanning the array to find the minimum and swap.
+
+- MSTUsingPrimsAlgo.java : O(E log V) time.
+    Reason: Uses a priority queue (min-heap); priority queue operations dominate.
+
+- MazeAStar.java : Worst-case exponential O(b^d), practical behavior ~O(V log V) with good heuristic.
+    Reason: A* expands states guided by heuristic; each expansion incurs a PQ operation (log factor).
+
+- KruskalAlgorithm.java : O(E log E) ≈ O(E log V) time.
+    Reason: Sorting edges is the dominant step; union-find is nearly constant (amortized).
+
+- GraphColoringCSP.java : Exponential time (worst-case O(k^V)).
+    Reason: DFS + backtracking explores combinatorial color assignments; branch-and-bound prunes some branches.
+
+- EightPuzzleAStar.java : Exponential worst-case O(b^d) (state-space bounded ≈ 9!/2).
+    Reason: A* over permutation states; heuristic reduces expansions but worst-case is exponential; PQ adds log factor.
+
+- DijkstraAlgorithm.java : O((V + E) log V) time (commonly O(E log V)).
+    Reason: Each edge may cause a decrease-key equivalent (insert) in PQ; PQ ops cost log V.
+
+- CSP.java (N-Queens) : Exponential O(N!) (worst-case).
+    Reason: Backtracking tries placements row-by-row; number of permutations grows factorially.
+
+- Assignment_1.java : BFS/DFS — O(V + E) time.
+    Reason: Standard graph traversal visiting each vertex and edge once.
+
+- SimpleChatbot.java : Per-message O(R * m) time (R = number of rules, m = message length); typically O(m) for fixed rule count.
+    Reason: Keyword checks scan the input text for each rule (string operations).
+
+================================================================================
+*/
