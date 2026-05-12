@@ -15,7 +15,7 @@ public class Assignment_1 {
         }
     }
 
-    public static void createGraph(ArrayList<Edge> graph[] ){   //the graph pics saved in directory
+    public static void createGraph(ArrayList<Edge> graph[] ){ 
 
         for(int i =0; i<graph.length;i++){      
             graph [i] = new ArrayList<>();
@@ -38,10 +38,10 @@ public class Assignment_1 {
 
     public static void BFS(ArrayList<Edge> graph []){
         
-        boolean visited[] = new boolean[graph.length+1];
+        boolean visited[] = new boolean[graph.length];
 
         for (int i = 0; i <graph.length; i++) {
-            BFSUtil(graph, i, visited);
+                BFSUtil(graph, i, visited);
         }
     }
 
@@ -78,15 +78,18 @@ public class Assignment_1 {
         
     public static void DFS(ArrayList<Edge> graph []){
       
-        boolean visited[] = new boolean[graph.length+1];
+        boolean visited[] = new boolean[graph.length];
 
         for (int i = 0; i <graph.length; i++) {
-            DFSUtil(graph, i, visited);
+                DFSUtil(graph, i, visited);
         }
     }
 
     public static void DFSUtil(ArrayList<Edge> graph [],int curr , boolean[] visited){
-        
+        if (visited[curr]) {
+            return;
+        }
+
         System.out.print(curr+" ");
         visited[curr]=true;
 
