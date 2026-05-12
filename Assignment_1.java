@@ -86,6 +86,7 @@ public class Assignment_1 {
     }
 
     public static void DFSUtil(ArrayList<Edge> graph [],int curr , boolean[] visited){
+       
         if (visited[curr]) {
             return;
         }

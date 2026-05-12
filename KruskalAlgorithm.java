@@ -97,7 +97,7 @@ public class KruskalAlgorithm {
     public static void main(String[] args) {
         
          ArrayList<Edge>graph = new ArrayList<>();
-        createGraph(graph);;
+        createGraph(graph);
         System.out.println(kruskalAlgorithm(graph, 4));
     }
 }
